@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <div>
@@ -87,7 +87,9 @@ export default function Footer() {
         {/* Copyright */}
         <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
           <span style={{ color: 'blue' }}>© 2024 Copyright:</span> {/* Blue text color */}
-          <a className="text-body" href="https://mdbootstrap.com/" style={{ color: 'blue' }}>Heramb_Rallapally</a>
+          <Link className="text-body" to="/" style={{ color: 'blue' }}>
+            Go,Food INC 2024
+          </Link>
         </div>
         {/* Copyright */}
       </footer>
